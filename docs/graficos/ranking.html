@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "color": "#4C78A8"}, "encoding": {"tooltip": [{"field": "Pa\u00eds__ESTANDAR", "title": "Regi\u00f3n", "type": "nominal"}, {"field": "promedio", "format": ".6f", "title": "Promedio (\u00b0C)", "type": "quantitative"}, {"field": "n", "title": "Observaciones", "type": "quantitative"}], "x": {"field": "promedio", "scale": {"zero": true}, "title": "Variaci\u00f3n promedio de temperatura (\u00b0C)", "type": "quantitative"}, "y": {"field": "Pa\u00eds__ESTANDAR", "sort": {"field": "promedio", "order": "descending"}, "title": "Regi\u00f3n", "type": "nominal"}}}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "color": "#222", "dx": 5}, "encoding": {"text": {"field": "promedio", "format": ".4f", "type": "quantitative"}, "x": {"field": "promedio", "type": "quantitative"}, "y": {"field": "Pa\u00eds__ESTANDAR", "sort": {"field": "promedio", "order": "descending"}, "type": "nominal"}}}], "data": {"name": "data-393f126e3ebd823bc37261b7dccc1836"}, "height": 195, "title": {"text": "Variaci\u00f3n promedio de temperatura por regi\u00f3n", "subtitle": ["n = 195 observaciones", "Fuente: FAOSTAT"]}, "width": 760, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-393f126e3ebd823bc37261b7dccc1836": [{"Pa\u00eds__ESTANDAR": "El Caribe", "promedio": 0.5394769230769231, "n": 65}, {"Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "promedio": 0.5324153846153846, "n": 65}, {"Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "promedio": 0.46984615384615386, "n": 65}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+
+<section class="detalle">
+  <h2>Por qué es adecuado</h2>
+  <p>Las barras horizontales comparan las medias entre regiones; ordenarlas de mayor a menor facilita identificar el ranking. Las cifras resumen observaciones, sin implicar causalidad.</p>
+  <h2>Datos usados para el gráfico</h2>
+  <p>Fuente: FAOSTAT. La tabla muestra el promedio y el número de observaciones que contribuyen a cada barra.</p>
+  <table class="dataframe tabla-datos" id="datos-grafico">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Región</th>
+      <th>Variación promedio (°C)</th>
+      <th>Observaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>El Caribe</td>
+      <td>0.539476923076923</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>América del Sur</td>
+      <td>0.532415384615385</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>América Central</td>
+      <td>0.469846153846154</td>
+      <td>65</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<style>
+  body { font-family: sans-serif; margin: 2rem; }
+  .detalle { max-width: 900px; margin: 2rem auto; line-height: 1.5; }
+  .tabla-datos { border-collapse: collapse; width: 100%; }
+  .tabla-datos th, .tabla-datos td { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: right; }
+  .tabla-datos th { background: #f2f2f2; }
+</style>
+</body>
+</html>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle", "color": "#4C78A8", "opacity": 0.65, "size": 65}, "encoding": {"tooltip": [{"field": "A\u00f1os__ESTANDAR", "format": "d", "title": "A\u00f1o", "type": "quantitative"}, {"field": "value", "format": ".3f", "title": "Variaci\u00f3n (\u00b0C)", "type": "quantitative"}, {"field": "Pa\u00eds__ESTANDAR", "title": "Regi\u00f3n", "type": "nominal"}], "x": {"axis": {"format": "d", "tickMinStep": 1}, "field": "A\u00f1os__ESTANDAR", "title": "A\u00f1o", "type": "quantitative"}, "y": {"field": "value", "title": "Variaci\u00f3n de temperatura media (\u00b0C)", "type": "quantitative"}}}, {"mark": {"type": "line", "color": "#E45756", "strokeWidth": 3}, "encoding": {"x": {"field": "A\u00f1os__ESTANDAR", "type": "quantitative"}, "y": {"field": "value", "type": "quantitative"}}, "transform": [{"on": "A\u00f1os__ESTANDAR", "regression": "value"}]}], "data": {"name": "data-33582f9c65ec2a08737ebc307ce42edb"}, "height": 470, "title": {"text": "Relaci\u00f3n entre el a\u00f1o y la variaci\u00f3n de temperatura", "subtitle": ["n = 195 observaciones \u00b7 Pearson r = 0.896898", "Fuente: FAOSTAT"]}, "width": 850, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-33582f9c65ec2a08737ebc307ce42edb": [{"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1961, "value": -0.039, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1962, "value": -0.059, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1963, "value": -0.079, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1964, "value": 0.132, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1965, "value": -0.096, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1966, "value": -0.131, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1967, "value": -0.225, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1968, "value": -0.283, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1969, "value": 0.135, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1970, "value": -0.226, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1971, "value": -0.103, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1972, "value": 0.232, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1973, "value": 0.357, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1974, "value": -0.088, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1975, "value": 0.283, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1976, "value": -0.279, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1977, "value": 0.192, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1978, "value": 0.105, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1979, "value": 0.254, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1980, "value": 0.543, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1981, "value": 0.243, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1982, "value": 0.435, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1983, "value": 0.408, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1984, "value": 0.215, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1985, "value": 0.148, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1986, "value": 0.249, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1987, "value": 0.757, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1988, "value": 0.609, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1989, "value": 0.478, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1990, "value": 0.679, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1991, "value": 0.684, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1992, "value": 0.449, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1993, "value": 0.493, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1994, "value": 0.813, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1995, "value": 0.85, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1996, "value": 0.305, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1997, "value": 0.77, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1998, "value": 1.033, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 1999, "value": 0.659, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2000, "value": 0.447, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2001, "value": 0.54, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2002, "value": 0.803, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2003, "value": 0.936, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2004, "value": 0.614, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2005, "value": 0.721, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2006, "value": 0.75, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2007, "value": 0.908, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2008, "value": 0.527, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2009, "value": 0.702, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2010, "value": 0.792, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2011, "value": 0.451, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2012, "value": 0.58, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2013, "value": 0.815, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2014, "value": 0.96, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2015, "value": 1.2, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2016, "value": 1.192, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2017, "value": 1.189, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2018, "value": 1.008, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2019, "value": 1.205, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2020, "value": 1.48, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2021, "value": 1.019, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2022, "value": 1.061, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2023, "value": 1.477, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2024, "value": 1.498, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "El Caribe", "A\u00f1os__ESTANDAR": 2025, "value": 1.289, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1961, "value": -0.144, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1962, "value": 0.105, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1963, "value": 0.143, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1964, "value": -0.268, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1965, "value": -0.086, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1966, "value": -0.178, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1967, "value": -0.156, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1968, "value": -0.408, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1969, "value": 0.178, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1970, "value": -0.283, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1971, "value": -0.111, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1972, "value": 0.297, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1973, "value": -0.062, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1974, "value": -0.109, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1975, "value": -0.248, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1976, "value": -0.408, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1977, "value": 0.117, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1978, "value": 0.203, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1979, "value": 0.03, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1980, "value": 0.417, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1981, "value": 0.183, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1982, "value": 0.542, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1983, "value": 0.171, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1984, "value": -0.06, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1985, "value": 0.082, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1986, "value": 0.238, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1987, "value": 0.013, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1988, "value": 0.221, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1989, "value": 0.381, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1990, "value": 0.265, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1991, "value": 0.283, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1992, "value": 0.129, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1993, "value": 0.302, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1994, "value": 0.665, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1995, "value": 0.761, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1996, "value": 0.441, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1997, "value": 0.514, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1998, "value": 0.77, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 1999, "value": 0.54, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2000, "value": 0.49, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2001, "value": 0.481, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2002, "value": 0.682, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2003, "value": 0.836, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2004, "value": 0.39, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2005, "value": 0.758, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2006, "value": 0.828, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2007, "value": 0.505, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2008, "value": 0.484, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2009, "value": 0.969, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2010, "value": 0.371, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2011, "value": 0.886, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2012, "value": 0.821, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2013, "value": 0.735, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2014, "value": 0.842, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2015, "value": 1.089, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2016, "value": 1.265, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2017, "value": 1.403, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2018, "value": 1.085, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2019, "value": 1.28, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2020, "value": 1.599, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2021, "value": 1.076, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2022, "value": 1.11, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2023, "value": 1.71, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2024, "value": 1.795, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica Central", "A\u00f1os__ESTANDAR": 2025, "value": 1.58, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1961, "value": 0.111, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1962, "value": -0.144, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1963, "value": 0.134, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1964, "value": -0.213, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1965, "value": -0.023, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1966, "value": -0.002, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1967, "value": 0.0, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1968, "value": -0.158, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1969, "value": 0.347, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1970, "value": 0.177, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1971, "value": -0.263, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1972, "value": 0.082, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1973, "value": 0.249, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1974, "value": -0.2, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1975, "value": -0.141, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1976, "value": -0.21, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1977, "value": 0.299, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1978, "value": 0.162, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1979, "value": 0.129, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1980, "value": 0.334, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1981, "value": 0.217, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1982, "value": 0.289, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1983, "value": 0.469, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1984, "value": 0.161, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1985, "value": 0.14, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1986, "value": 0.278, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1987, "value": 0.655, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1988, "value": 0.317, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1989, "value": 0.208, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1990, "value": 0.415, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1991, "value": 0.454, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1992, "value": 0.326, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1993, "value": 0.406, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1994, "value": 0.581, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1995, "value": 0.67, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1996, "value": 0.461, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1997, "value": 0.769, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1998, "value": 1.033, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 1999, "value": 0.4, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2000, "value": 0.308, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2001, "value": 0.619, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2002, "value": 0.839, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2003, "value": 0.813, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2004, "value": 0.719, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2005, "value": 0.881, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2006, "value": 0.772, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2007, "value": 0.643, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2008, "value": 0.64, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2009, "value": 0.907, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2010, "value": 0.873, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2011, "value": 0.702, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2012, "value": 0.931, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2013, "value": 0.8, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2014, "value": 1.075, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2015, "value": 1.403, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2016, "value": 1.25, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2017, "value": 1.226, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2018, "value": 1.019, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2019, "value": 1.295, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2020, "value": 1.365, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2021, "value": 1.055, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2022, "value": 0.831, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2023, "value": 1.668, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2024, "value": 1.826, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}, {"indicator": "Variaci\u00f3n de la temperatura media", "Pa\u00eds__ESTANDAR": "Am\u00e9rica del Sur", "A\u00f1os__ESTANDAR": 2025, "value": 1.228, "unit": "Grados celsius", "notes_ids": null, "source_id": 651}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+
+<section class="interpretacion">
+  <h2>Por qué es adecuado</h2>
+  <p>El diagrama de dispersión muestra las observaciones de dos variables numéricas y su dispersión; la línea de tendencia lineal resume el patrón conjunto observado. No permite concluir causalidad.</p>
+  <h2>Interpretación del coeficiente</h2>
+  <p>El coeficiente de correlación de Pearson es r = 0.896898. Su signo indica una asociación lineal global positiva entre el año y value. La magnitud |r| indica qué tan cerca está la asociación lineal de ser perfecta: cuanto más próxima a 1, más fuerte; cuanto más próxima a 0, más débil. El coeficiente resume las observaciones de todas las regiones en conjunto; describe asociación, no causalidad.</p>
+  <h2>Datos usados para el gráfico</h2>
+  <p>Fuente: FAOSTAT. La tabla incluye las observaciones representadas.</p>
+  <table class="dataframe tabla-datos" id="datos-grafico">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Año</th>
+      <th>Variación de temperatura (°C)</th>
+      <th>Región</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1961</td>
+      <td>-0.144</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1961</td>
+      <td>0.111</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1961</td>
+      <td>-0.039</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1962</td>
+      <td>0.105</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1962</td>
+      <td>-0.144</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1962</td>
+      <td>-0.059</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1963</td>
+      <td>0.143</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1963</td>
+      <td>0.134</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1963</td>
+      <td>-0.079</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1964</td>
+      <td>-0.268</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1964</td>
+      <td>-0.213</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1964</td>
+      <td>0.132</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1965</td>
+      <td>-0.086</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1965</td>
+      <td>-0.023</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1965</td>
+      <td>-0.096</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1966</td>
+      <td>-0.178</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1966</td>
+      <td>-0.002</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1966</td>
+      <td>-0.131</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1967</td>
+      <td>-0.156</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1967</td>
+      <td>0</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1967</td>
+      <td>-0.225</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1968</td>
+      <td>-0.408</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1968</td>
+      <td>-0.158</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1968</td>
+      <td>-0.283</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1969</td>
+      <td>0.178</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1969</td>
+      <td>0.347</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1969</td>
+      <td>0.135</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1970</td>
+      <td>-0.283</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1970</td>
+      <td>0.177</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1970</td>
+      <td>-0.226</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1971</td>
+      <td>-0.111</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1971</td>
+      <td>-0.263</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1971</td>
+      <td>-0.103</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1972</td>
+      <td>0.297</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1972</td>
+      <td>0.082</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1972</td>
+      <td>0.232</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1973</td>
+      <td>-0.062</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1973</td>
+      <td>0.249</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1973</td>
+      <td>0.357</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1974</td>
+      <td>-0.109</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1974</td>
+      <td>-0.2</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1974</td>
+      <td>-0.088</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td>-0.248</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td>-0.141</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td>0.283</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1976</td>
+      <td>-0.408</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1976</td>
+      <td>-0.21</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1976</td>
+      <td>-0.279</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1977</td>
+      <td>0.117</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1977</td>
+      <td>0.299</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1977</td>
+      <td>0.192</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1978</td>
+      <td>0.203</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1978</td>
+      <td>0.162</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1978</td>
+      <td>0.105</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1979</td>
+      <td>0.03</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1979</td>
+      <td>0.129</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1979</td>
+      <td>0.254</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1980</td>
+      <td>0.417</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1980</td>
+      <td>0.334</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1980</td>
+      <td>0.543</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1981</td>
+      <td>0.183</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1981</td>
+      <td>0.217</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1981</td>
+      <td>0.243</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1982</td>
+      <td>0.542</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1982</td>
+      <td>0.289</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1982</td>
+      <td>0.435</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1983</td>
+      <td>0.171</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1983</td>
+      <td>0.469</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1983</td>
+      <td>0.408</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1984</td>
+      <td>-0.06</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1984</td>
+      <td>0.161</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1984</td>
+      <td>0.215</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1985</td>
+      <td>0.082</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1985</td>
+      <td>0.14</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1985</td>
+      <td>0.148</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1986</td>
+      <td>0.238</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1986</td>
+      <td>0.278</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1986</td>
+      <td>0.249</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1987</td>
+      <td>0.013</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1987</td>
+      <td>0.655</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1987</td>
+      <td>0.757</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1988</td>
+      <td>0.221</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1988</td>
+      <td>0.317</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1988</td>
+      <td>0.609</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1989</td>
+      <td>0.381</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1989</td>
+      <td>0.208</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1989</td>
+      <td>0.478</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1990</td>
+      <td>0.265</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1990</td>
+      <td>0.415</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1990</td>
+      <td>0.679</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1991</td>
+      <td>0.283</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1991</td>
+      <td>0.454</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1991</td>
+      <td>0.684</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1992</td>
+      <td>0.129</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1992</td>
+      <td>0.326</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1992</td>
+      <td>0.449</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1993</td>
+      <td>0.302</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1993</td>
+      <td>0.406</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1993</td>
+      <td>0.493</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1994</td>
+      <td>0.665</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1994</td>
+      <td>0.581</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1994</td>
+      <td>0.813</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1995</td>
+      <td>0.761</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1995</td>
+      <td>0.67</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1995</td>
+      <td>0.85</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1996</td>
+      <td>0.441</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1996</td>
+      <td>0.461</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1996</td>
+      <td>0.305</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1997</td>
+      <td>0.514</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1997</td>
+      <td>0.769</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1997</td>
+      <td>0.77</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1998</td>
+      <td>0.77</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1998</td>
+      <td>1.033</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1998</td>
+      <td>1.033</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>0.54</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>0.4</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>0.659</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>0.49</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>0.308</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>0.447</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td>0.481</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td>0.619</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td>0.54</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>0.682</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>0.839</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>0.803</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>0.836</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>0.813</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>0.936</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>0.39</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>0.719</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>0.614</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>0.758</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>0.881</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>0.721</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>0.828</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>0.772</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>0.75</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>0.505</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>0.643</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>0.908</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>0.484</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>0.64</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>0.527</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>0.969</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>0.907</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>0.702</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>0.371</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>0.873</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>0.792</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>0.886</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>0.702</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>0.451</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>0.821</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>0.931</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>0.58</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>0.735</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>0.8</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>0.815</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>0.842</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>1.075</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>0.96</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>1.089</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>1.403</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>1.2</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>1.265</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>1.25</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>1.192</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>1.403</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>1.226</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>1.189</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>1.085</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>1.019</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>1.008</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>1.28</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>1.295</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>1.205</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>1.599</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>1.365</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>1.48</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>1.076</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>1.055</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>1.019</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>1.11</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>0.831</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>1.061</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>1.71</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>1.668</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>1.477</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>1.795</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>1.826</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>1.498</td>
+      <td>El Caribe</td>
+    </tr>
+    <tr>
+      <td>2025</td>
+      <td>1.58</td>
+      <td>América Central</td>
+    </tr>
+    <tr>
+      <td>2025</td>
+      <td>1.228</td>
+      <td>América del Sur</td>
+    </tr>
+    <tr>
+      <td>2025</td>
+      <td>1.289</td>
+      <td>El Caribe</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<style>
+  body { font-family: sans-serif; margin: 2rem; }
+  .interpretacion { max-width: 1000px; margin: 2rem auto; line-height: 1.6; }
+  .tabla-datos { border-collapse: collapse; width: 100%; }
+  .tabla-datos th, .tabla-datos td { border: 1px solid #ccc; padding: 0.35rem 0.5rem; text-align: right; }
+  .tabla-datos th { position: sticky; top: 0; background: #f2f2f2; }
+</style>
+</body>
+</html>

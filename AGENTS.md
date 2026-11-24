@@ -1,13 +1,54 @@
-# Reglas de análisis
+#Reglas de análisis
+Responde y comenta el código en español.
+Nunca modifiques ni borres archivos de datos/crudo/.
+Nunca inventes ni completes datos.
+Todo cálculo debe hacerse mediante scripts numerados dentro de analisis/.
+Todos los gráficos deben generarse con Altair.
+Guardar gráficos en docs/graficos/.
+Cada gráfico debe incluir título, ejes, tamaño de muestra (n) y fuente.
+Antes de cualquier cambio importante explica el plan.
+Al finalizar cada tarea indica los archivos creados o modificados.
+Alcance del proyecto analítico
+Distribución
+Sí.
 
-- Responde y comenta el código en español.
-- Nunca modifiques ni borres archivos de `datos/crudo/`.
-- Nunca inventes, completes ni estimes datos. Si falta algo, dilo.
-- Todo cálculo se hace con un script en `analisis/`, numerado (`01_`, `02_`, ...), que se pueda volver a ejecutar.
-- Los gráficos se hacen con Altair y se guardan en `docs/graficos/` como HTML.
-- Cada gráfico lleva título, ejes con nombre legible, el tamaño de muestra (`n`) y la fuente.
-- Antes de ejecutar un cambio grande, explícame el plan y espera mi aprobación.
-- Al terminar cada tarea, dime qué archivos creaste o cambiaste.
-- Trabaja solo dentro del alcance del proyecto analítico. Si te pido algo fuera del alcance, avísame antes de hacerlo.
+Variable:
 
-## Alcance del proyecto analítico
+value
+Pregunta: ¿Cómo se distribuyen las variaciones de temperatura observadas en el conjunto de datos?
+
+Ranking
+Sí.
+
+Variables:
+
+País__ESTANDAR
+value
+Pregunta: ¿Qué región presenta las mayores variaciones promedio de temperatura?
+
+Relación
+Sí.
+
+Variables:
+
+Años__ESTANDAR
+value
+Pregunta: ¿Qué relación existe entre el paso del tiempo y la variación de temperatura?
+
+Cambio en el tiempo
+Sí.
+
+Variables:
+
+Años__ESTANDAR
+value
+Pregunta: ¿Cómo ha evolucionado la temperatura media entre 1961 y 2025?
+
+Espacial
+Sí.
+
+Variables:
+
+País__ESTANDAR
+value
+Pregunta: ¿Qué regiones presentan mayores variaciones de temperatura?
